@@ -79,7 +79,7 @@ Parquet文件和Thrift的定义需要一起来看才能理解这些格式
 
 读取者希望第一次读文件的元数据时就读到他们感兴趣的列块信息，然后列块必须被顺序的读取。
 
-![](http://i.imgur.com/qmkpqOT.gif)
+![](./resource/FileLayout.gif)
 
 * 以下是个人理解(不一样的视角)：
 
@@ -96,7 +96,7 @@ Parquet文件和Thrift的定义需要一起来看才能理解这些格式
 
 有三种类型的元数据：文件元数据，列元数据，页头元数据。所有的Thrift结构都是用TCompactProtocol协议序列化。
 
-![](http://i.imgur.com/4Ic87Pa.gif)
+![](./resource/FileFormat.gif)
 
 ## Types
 
